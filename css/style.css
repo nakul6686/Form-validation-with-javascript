@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #a8dadc;
+}
+.form-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+.form-group i {
+  position: absolute;
+  right: 8px;
+  top: 31px;
+  font-size: 15px;
+  visibility: hidden;
+}
+.successElem i {
+  color: green;
+}
+.successElem input,
+.successElem select {
+  border-color: green !important;
+}
+.errorElem input,
+.errorElem select {
+  border-color: red !important;
+}
+.errorElem i {
+  color: red;
+}
+.successElem .bi-check-circle-fill {
+  visibility: visible;
+}
+.errorElem .bi-exclamation-circle-fill {
+  visibility: visible;
+}
+.error {
+  display: none;
+}
+.errorElem .error {
+  display: block;
+}
+.successElem .error {
+  display: none;
+}
+label {
+  margin-bottom: 5px;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+@media screen and (max-width: 768px) {
+  .form-outer.w-25 {
+    width: 50% !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form-outer.w-25 {
+    width: 95% !important;
+    margin-top: 50px !important;
+  }
+}

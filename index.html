@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validation Example</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div
+      class="form-outer w-25 m-auto pb-5 pt-3 px-3 bg-white shadow rounded mt-lg-5"
+    >
+      <form id="signupForm">
+        <h5 class="form-heading">Fill the given feilds and signup</h5>
+        <div class="form-group">
+          <label for="Username">User Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="username"
+            placeholder="Enter User name"
+          />
+          <i class="bi bi-check-circle-fill"></i>
+          <i class="bi bi-exclamation-circle-fill"></i>
+          <small class="text-danger error"></small>
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            aria-describedby="emailHelp"
+            placeholder="Enter email"
+          />
+          <i class="bi bi-check-circle-fill"></i>
+          <i class="bi bi-exclamation-circle-fill"></i>
+          <small class="text-danger error"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="number">Number</label>
+          <input
+            type="number"
+            class="form-control"
+            id="number"
+            placeholder="Enter number"
+          />
+          <i class="bi bi-check-circle-fill"></i>
+          <i class="bi bi-exclamation-circle-fill"></i>
+          <small class="text-danger error"></small>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder="Password"
+          />
+          <i class="bi bi-check-circle-fill"></i>
+          <i class="bi bi-exclamation-circle-fill"></i>
+          <small class="text-danger error"></small>
+        </div>
+        <div class="form-group">
+          <label for="course">Course</label>
+          <select class="form-control" id="course">
+            <option selected hidden>Please select course.</option>
+            <option>Html</option>
+            <option>JavaScript</option>
+            <option>Angular</option>
+            <option>React</option>
+          </select>
+          <i class="bi bi-check-circle-fill"></i>
+          <i class="bi bi-exclamation-circle-fill"></i>
+          <small class="text-danger error"></small>
+        </div>
+        <button class="btn btn-primary w-100">Submit</button>
+      </form>
+    </div>
+
+    <script type="text/javascript" src="js/script.js" type=""></script>
+  </body>
+</html>
